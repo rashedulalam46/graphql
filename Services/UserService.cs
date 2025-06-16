@@ -9,11 +9,14 @@ namespace GraphQL.Services
     {
          private readonly List<User> _users = new()
     {
-        new User { Id = 1, Username = "Rashedul Alam", Email = "rashed@example.com" },
-        new User { Id = 2, Username = "John Doe", Email = "john@example.com" }
+        new User { UserId = 1001, UserName = "RASHED", Email = "rashed@example.com" },
+        new User { UserId = 1002, UserName = "JOHN", Email = "john@example.com" },
+        new User { UserId = 1003, UserName = "KAMAL", Email = "kamal@gmail.com"},
+        new User { UserId = 1004, UserName = "KEVIN", Email = "kevin@gmail.com" },
+        new User { UserId = 1005, UserName = "MAIKEL", Email = "maikel@gmail.com" }
     };
 
     public IEnumerable<User> GetUsers() => _users;
-    public User? GetUserById(int id) => _users.FirstOrDefault(u => u.Id == id);
+    public User? GetUserById(int id) => _users.FirstOrDefault(u => u.UserId == id);
     }
 }

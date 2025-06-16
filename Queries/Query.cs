@@ -1,7 +1,7 @@
 using GraphQL.Models;
 using GraphQL.Services;
 
-namespace GraphQLDemo.GraphQL;
+namespace GraphQL.Queries;
 
 public class Query
 {

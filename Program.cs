@@ -1,4 +1,14 @@
+using GraphQL.Models;
+using GraphQL.Queries;
+using GraphQL.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<UserService>();
+builder.Services.AddGraphQLServer()
+    .AddGraphQLServer()
+    .AddQueryType<Query>();
+    
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -36,6 +46,7 @@ app.MapGet("/weatherforecast", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
+app.MapGraphQL();
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
