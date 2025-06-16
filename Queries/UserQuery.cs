@@ -3,7 +3,7 @@ using GraphQL.Services;
 
 namespace GraphQL.Queries;
 
-public class Query
+public class UserQuery
 {
     public IEnumerable<User> GetUsers([Service] UserService service) => service.GetUsers();
 

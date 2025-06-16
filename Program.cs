@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddGraphQLServer()
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<UserQuery>();
 
 var app = builder.Build();
 
