@@ -7,7 +7,7 @@ namespace GraphQL.Services
 
     public class UserService
     {
-         private readonly List<User> _users = new()
+        private readonly List<User> _users = new()
     {
         new User { UserId = 1001, UserName = "RASHED", Email = "rashed@example.com" },
         new User { UserId = 1002, UserName = "JOHN", Email = "john@example.com" },
@@ -16,7 +16,7 @@ namespace GraphQL.Services
         new User { UserId = 1005, UserName = "MAIKEL", Email = "maikel@gmail.com" }
     };
 
-    public IEnumerable<User> GetUsers() => _users;
-    public User? GetUserById(int id) => _users.FirstOrDefault(u => u.UserId == id);
+        public IEnumerable<User> GetUsers() => _users;
+        public User? GetUserById(int id) => _users.FirstOrDefault(u => u.UserId == id);
     }
 }
