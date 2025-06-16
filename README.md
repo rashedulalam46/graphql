@@ -16,7 +16,7 @@ This project demonstrates how to build a simple GraphQL API using ASP.NET Core a
 
 ## 🔗 GitHub Repository
 
-[https://github.com/rashedulalam46/server-side-validation](https://github.com/rashedulalam46/server-side-validation)
+[https://github.com/rashedulalam46/graphql](https://github.com/rashedulalam46/graphql)
 
 ---
 
@@ -39,8 +39,8 @@ Before you begin, make sure you have the following installed:
 Open your terminal and run the following command:
 
 ```bash
-git clone https://github.com/rashedulalam46/server-side-validation.git
-cd server-side-validation
+git clone https://github.com/rashedulalam46/graphql.git
+cd graphql
 ```
 
 ## ▶️ Run the Project
